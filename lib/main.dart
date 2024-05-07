@@ -31,7 +31,8 @@ class PdfGenerator extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('PDF Generator'),
+          centerTitle: true,
+          title: const Text('Loan Statement PDF Generator'),
         ),
         body: PdfGeneratorScreen(),
       ),
@@ -76,7 +77,7 @@ class _PdfGeneratorScreenState extends State<PdfGeneratorScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return Center(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
