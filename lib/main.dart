@@ -131,7 +131,14 @@ class _PdfGeneratorScreenState extends State<PdfGeneratorScreen> {
       final QuerySnapshot refQuerySnapshot = await refColl.get();
 
       final DocumentSnapshot docSnapshot = await docRef.get();
+      final String accruedInterest = docSnapshot.get('accruedInterest');
+      final String amountCcollected =
+          docSnapshot.get('amount collected(physical remittance)');
+      final String amountcollectpmec = docSnapshot.get('amountcollectpmec');
+      final String difference = docSnapshot.get('difference');
       final String dueDate = docSnapshot.get('due date');
+      final String monthlyRepaymentAmount =
+          docSnapshot.get('monthlyRepaymentAmount');
 
       // Process ref data
       final List<pw.TableRow> refRows = [];
@@ -295,7 +302,7 @@ class _PdfGeneratorScreenState extends State<PdfGeneratorScreen> {
                                 pw.Padding(
                                   padding: const pw.EdgeInsets.symmetric(
                                       horizontal: 10, vertical: 3),
-                                  child: pw.Text('00000000',
+                                  child: pw.Text(difference,
                                       style: const pw.TextStyle(fontSize: 7)),
                                 ),
                               ]),
@@ -368,25 +375,25 @@ class _PdfGeneratorScreenState extends State<PdfGeneratorScreen> {
                                 pw.Padding(
                                   padding: const pw.EdgeInsets.symmetric(
                                       horizontal: 10, vertical: 2),
+                                  child: pw.Text(accruedInterest,
+                                      style: pw.TextStyle(fontSize: 6)),
+                                ),
+                                pw.Padding(
+                                  padding: const pw.EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 2),
+                                  child: pw.Text(amountCcollected,
+                                      style: pw.TextStyle(fontSize: 6)),
+                                ),
+                                pw.Padding(
+                                  padding: const pw.EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 2),
+                                  child: pw.Text(amountcollectpmec,
+                                      style: pw.TextStyle(fontSize: 6)),
+                                ),
+                                pw.Padding(
+                                  padding: const pw.EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 2),
                                   child: pw.Text(dueDate,
-                                      style: pw.TextStyle(fontSize: 6)),
-                                ),
-                                pw.Padding(
-                                  padding: const pw.EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
-                                  child: pw.Text('Data G',
-                                      style: pw.TextStyle(fontSize: 6)),
-                                ),
-                                pw.Padding(
-                                  padding: const pw.EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
-                                  child: pw.Text('Data H',
-                                      style: pw.TextStyle(fontSize: 6)),
-                                ),
-                                pw.Padding(
-                                  padding: const pw.EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
-                                  child: pw.Text('Data I',
                                       style: pw.TextStyle(fontSize: 6)),
                                 ),
                               ],
