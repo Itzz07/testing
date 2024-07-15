@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(testing LANGUAGES CXX)
+project(loan_statements LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "testing")
+set(BINARY_NAME "loan_statements")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.
@@ -24,9 +24,6 @@ else()
   endif()
 endif()
 # Define settings for the Profile build mode.
-set(PDFIUM_VERSION "4929" CACHE STRING "" FORCE)
-set(PDFIUM_ARCH "x64" CACHE STRING "" FORCE)
-
 set(CMAKE_EXE_LINKER_FLAGS_PROFILE "${CMAKE_EXE_LINKER_FLAGS_RELEASE}")
 set(CMAKE_SHARED_LINKER_FLAGS_PROFILE "${CMAKE_SHARED_LINKER_FLAGS_RELEASE}")
 set(CMAKE_C_FLAGS_PROFILE "${CMAKE_C_FLAGS_RELEASE}")
