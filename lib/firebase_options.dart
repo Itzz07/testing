@@ -41,48 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCCPazYNaFZT1IqWlfQhKCeSyDYmqiqlUs',
-    appId: '1:717468538843:web:458dddeccfad517240b9fe',
-    messagingSenderId: '717468538843',
-    projectId: 'testing-5e7c1',
-    authDomain: 'testing-5e7c1.firebaseapp.com',
-    storageBucket: 'testing-5e7c1.appspot.com',
-    measurementId: 'G-TN7RWVW152',
+    apiKey: 'AIzaSyA26NkMNZINJhiWAecwitVO7vKQbWhBKJk',
+    appId: '1:185041510818:ios:654d15c5e15461c08d52fb',
+    messagingSenderId: '185041510818',
+    projectId: 'frontier-finance-zambia',
+    authDomain: 'frontier-finance-zambia.firebaseapp.com',
+    storageBucket: 'frontier-finance-zambia.appspot.com',
+    measurementId: 'G-YRVF1SMJGE',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAIGz2pM2NRAMt2FsmUhY_3ggOgNzvYLFk',
-    appId: '1:717468538843:android:eaa76fd7c8bc0bd340b9fe',
-    messagingSenderId: '717468538843',
-    projectId: 'testing-5e7c1',
-    storageBucket: 'testing-5e7c1.appspot.com',
+    apiKey: 'AIzaSyBaXvyHp1k-TwPFYJPxOK3E0txzdn-3FJQ',
+    appId: '1:185041510818:web:db01be2007c26fea8d52fb',
+    messagingSenderId: '185041510818',
+    projectId: 'frontier-finance-zambia',
+    storageBucket: 'frontier-finance-zambia.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAxeGzQuGjEoB3uBHiRfHpWBFEU-UiDGCs',
-    appId: '1:717468538843:ios:f926b2035e2c557340b9fe',
-    messagingSenderId: '717468538843',
-    projectId: 'testing-5e7c1',
-    storageBucket: 'testing-5e7c1.appspot.com',
-    iosBundleId: 'com.example.testing',
+    apiKey: 'AIzaSyDahxVR_cFPb2gTKH2NY2wemA-RIR6Jnpw',
+    appId: '1:185041510818:ios:654d15c5e15461c08d52fb',
+    messagingSenderId: '185041510818',
+    projectId: 'frontier-finance-zambia',
+    storageBucket: 'frontier-finance-zambia.appspot.com',
+    iosBundleId: 'com.example.finalTesting',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAxeGzQuGjEoB3uBHiRfHpWBFEU-UiDGCs',
-    appId: '1:717468538843:ios:f926b2035e2c557340b9fe',
-    messagingSenderId: '717468538843',
-    projectId: 'testing-5e7c1',
-    storageBucket: 'testing-5e7c1.appspot.com',
-    iosBundleId: 'com.example.testing',
+    apiKey: 'AIzaSyDahxVR_cFPb2gTKH2NY2wemA-RIR6Jnpw',
+    appId: '1:185041510818:ios:654d15c5e15461c08d52fb',
+    messagingSenderId: '185041510818',
+    projectId: 'frontier-finance-zambia',
+    storageBucket: 'frontier-finance-zambia.appspot.com',
+    iosBundleId: 'com.example.finalTesting',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCCPazYNaFZT1IqWlfQhKCeSyDYmqiqlUs',
-    appId: '1:717468538843:web:1c27b8d753d139c840b9fe',
-    messagingSenderId: '717468538843',
-    projectId: 'testing-5e7c1',
-    authDomain: 'testing-5e7c1.firebaseapp.com',
-    storageBucket: 'testing-5e7c1.appspot.com',
-    measurementId: 'G-37XQZDH4YF',
+    apiKey: 'AIzaSyA26NkMNZINJhiWAecwitVO7vKQbWhBKJk',
+    appId: '1:185041510818:ios:654d15c5e15461c08d52fb',
+    messagingSenderId: '185041510818',
+    projectId: 'frontier-finance-zambia',
+    authDomain: 'frontier-finance-zambia.firebaseapp.com',
+    storageBucket: 'frontier-finance-zambia.appspot.com',
+    measurementId: 'G-YRVF1SMJGE',
   );
 }
